@@ -1,0 +1,157 @@
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+   font-family:'Satisfy'; 
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgb(176, 224, 230);
+    color:rgb(112, 128, 144);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust the spacing between items */
+}
+
+.menu-item {
+    flex: 1 1 calc(25% - 1rem); /* Four items per row, accounting for gap */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-top: 0.5rem;
+}
+
+.menu-item p {
+    margin: 0.5rem 0;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.menu-item button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #2ecc71;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item span {
+    font-weight: bold;
+}
+
+#checkout {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#checkout:hover {
+    background-color: #2980b9;
+}
+
+#menu {
+    position: relative;
+}
+
+#menu .menu-items {
+    margin-bottom: 2rem; /* Space between the last food item and beverage heading */
+}
+
+/* Add space before beverage menu */
+#beverages {
+    margin-top: 3rem; /* This ensures no additional top margin is added if not needed */
+}
+
+#beverage-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for 5 beverages per row */
+    gap: 1rem; /* Adjust spacing between items as needed */
+}
+
